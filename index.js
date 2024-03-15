@@ -9,4 +9,8 @@ async function getQuote(url){
     author.innerHTML = data.author
 }
 
+function tweet(){
+    window.open("https://twitter.com/intent/tweet?text=" + quote.innerHTML + "----by" + author.innerHTML,"X Window", "width=600, height=300");
+}
+
 getQuote(api_url);
